@@ -19,7 +19,7 @@ function twentyNumbers(){
   
   
   function arraySum(){
-  let array = [1, 2, 3, 4, 5, 6],
+  let array = [1, 2, 55, 4, 78, 16],
       s = array[0];
   for (let i = 1; i <= array.length-1; i++) {
       s = s + array[i];
@@ -41,8 +41,10 @@ function twentyNumbers(){
   }
    maxElements();
   
+
+
   
-  function maxElements(){
+  function repeatTimes(){
     let arr = [100, 200, 555, 100, 100, 90, 106, 100] ;
     let manyTimes = 0;
     for (let i = 0; i <=arr.length-1; i++) {
@@ -52,7 +54,7 @@ function twentyNumbers(){
     }
      console.log(manyTimes);
   }
-   maxElements();
+   repeatTimes();
   
   
   
