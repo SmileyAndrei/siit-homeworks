@@ -84,10 +84,10 @@ window.addEventListener('DOMContentLoaded', successMessage());
 
 function inlocuireNume() {
   const queryString = window.location.search;
-  var str = String(queryString); 
-  var res = str.split("&");
-  var stringUnu = res[0];
-  var stringDoi = stringUnu.slice(12 , Infinity);
+  const str = String(queryString); 
+  const res = str.split("&");
+  const stringUnu = res[0];
+  const stringDoi = stringUnu.slice(12 , Infinity);
   document.getElementById("demo").innerHTML = stringDoi;
 }
 
