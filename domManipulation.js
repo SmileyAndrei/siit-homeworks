@@ -57,12 +57,9 @@ function hideSuccessMessage() {
 }
 successMessage();
 
-
-
 function dateForm(){
   const radioss = document.querySelectorAll('[name=gender]');
   const inputUnuu = document.getElementById('inputUnu');
-  document.getElementById("demo").innerHTML = inputUnuu.value ;
   const inputDoii = document.getElementById('inputDoi');
   const inputTreii = document.getElementById('inputTrei');
   const inputTtreii = document.getElementById('inputTtrei');
@@ -85,4 +82,14 @@ buttonSub.addEventListener('click', dateForm);
 
 window.addEventListener('DOMContentLoaded', successMessage());
 
+function inlocuireNume() {
+  const queryString = window.location.search;
+  var str = String(queryString); 
+  var res = str.split("&");
+  var stringUnu = res[0];
+  var stringDoi = stringUnu.slice(12 , Infinity);
+  document.getElementById("demo").innerHTML = stringDoi;
+}
+
+inlocuireNume();
 
