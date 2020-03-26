@@ -1,0 +1,16 @@
+.body {
+    background-color: rgb(12, 143, 99);
+    color: bisque;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    ;
+}
+
+.textTemp{
+    margin-top: 15%;
+    font-size: 50px;
+}
+
+.temp{
+    font-size: 50px ;
+}
